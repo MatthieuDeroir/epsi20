@@ -1,7 +1,10 @@
+import random
+
 while True:
-    command = input("Enter a command: ")
-    if command.lower() == "exit" or command.lower() == "quit":
+    sentence = input("Enter a sentence: ")
+    if sentence.lower() == "exit" or sentence.lower() == "quit":
         break
-    print("Hahaha!")
+    answers = ["Interesting!", "Tell me more!", "I see.", "Fascinating!", "Go on...", "Really?", "That's cool!", "I'm listening.", "Hmm, I'm not sure...", "Wow!"]
+    print(random.choice(answers))
 print("Goodbye!")
 
